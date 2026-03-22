@@ -12,6 +12,7 @@ public class PrintName {
         System.out.println("enter your name ");
         Scanner sc = new Scanner (System.in);
         String name = sc.next();
-        PrintMyName(name);   //Function Calling
+        PrintMyName(name); 
+        sc.close();  //Function Calling
     }
 }

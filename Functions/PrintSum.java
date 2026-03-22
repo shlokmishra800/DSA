@@ -15,6 +15,6 @@ public class PrintSum {
         int b = sc.nextInt();
        int sum = printSum(a, b);
         System.out.println("your sum is "  +sum);
-
+         sc.close();
     }
 }
