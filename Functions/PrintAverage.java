@@ -14,5 +14,6 @@ public static void main(String[] args) {
     int c = sc.nextInt();
 
     System.out.println(" average of given 3 numbers is " +PrintAvg(a, b, c));
+    sc.close();
 }
 }

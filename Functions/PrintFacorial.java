@@ -23,5 +23,6 @@ public class PrintFacorial {
         System.out.println("enter your number ");
         int n = sc.nextInt();
         PrintFactorial(n);
+        sc.close();
     }
 }
