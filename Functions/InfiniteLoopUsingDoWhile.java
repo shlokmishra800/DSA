@@ -1,5 +1,4 @@
 package Functions;
-import java.util.*;
 
 public class InfiniteLoopUsingDoWhile {
     public static void Loop() {
