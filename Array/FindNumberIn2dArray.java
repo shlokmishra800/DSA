@@ -1,4 +1,4 @@
-
+package Array;
 import java.util.*;
 public class FindNumberIn2dArray {
     public static void main(String[] args) {

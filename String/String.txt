@@ -3,7 +3,7 @@ This folder contains all **String-related problems and programs** implemented in
 
 ##  Definition of String in Java
 In Java, a **String** is a sequence of characters enclosed within double quotes (`""`). It is an object of the `String` class and is **immutable**, meaning once a string is created, its value cannot be changed.
-
+Strings are immutable means once we created a string in memory they we cannot modify it .
 ##  What This Folder Includes
 - String reversal programs  
 - Palindrome checking  
