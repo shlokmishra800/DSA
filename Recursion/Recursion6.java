@@ -10,7 +10,7 @@ public class Recursion6 {
         }
 
         int x_pow_nm1 = calcPower(x, n-1);
-        int x_pown = n * x_pow_nm1;
+        int x_pown = x * x_pow_nm1;
         return x_pown;
         
     }
