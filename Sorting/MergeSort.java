@@ -5,7 +5,7 @@ public class MergeSort {
         int merged[] = new int[ei - si + 1];
 
         int idx1 = si;
-         int idx2 = mid + 1;
+        int idx2 = mid + 1;
         int x = 0;
 
         while (idx1 <= mid && idx2 <= ei) {
@@ -30,11 +30,10 @@ public class MergeSort {
 
     public static void divide(int arr[], int si, int ei) {
         if (si >= ei) {
-        
-             return;
+
+            return;
         }
 
-       
         int mid = si + (ei - si) / 2;
 
         divide(arr, si, mid);
@@ -43,7 +42,7 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int arr[] = {5, 2, 8, 6, 1, 7};
+        int arr[] = { 5, 2, 8, 6, 1, 7 };
         int n = arr.length;
 
         divide(arr, 0, n - 1);
@@ -56,6 +55,5 @@ public class MergeSort {
         System.out.println();
     }
 }
-
 
 // Output => 125678
