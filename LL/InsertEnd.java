@@ -50,3 +50,5 @@ public class InsertEnd {
     }
 }
 // Output => 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> Null
+// Time complexity => O(1) because tail is there,
+// and O(n) if tail is not there.

@@ -1,3 +1,4 @@
+package StaticKeyword;
 class Student{
 String name;
 static String School;  // we use static keyword on that things which are common in every places

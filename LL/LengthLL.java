@@ -44,3 +44,5 @@ public class LengthLL {
     }
 }
 // Output => 6
+
+// Time Complexity => O(n) because Linked List class is not there.
