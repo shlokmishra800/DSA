@@ -1,7 +1,7 @@
 package LL;
 
 public class DltNodeFromEnd {
-     public static class Node {
+    public static class Node {
         int data;
         Node next;
 
@@ -15,28 +15,33 @@ public class DltNodeFromEnd {
         Node tail = null;
         int length = 0;
 
+        // Insert at End
         public void insertAtEnd(int val) {
             Node temp = new Node(val);
             if (head == null) {
                 head = temp;
+                tail = temp;
             } else {
                 tail.next = temp;
+                tail = temp;
             }
-            tail = temp;
             length++;
         }
 
+        // Insert at Beginning
         void insertAtBeg(int val) {
             Node temp = new Node(val);
             if (head == null) {
-                insertAtEnd(val);
+                head = temp;
+                tail = temp;
             } else {
                 temp.next = head;
                 head = temp;
-                length++;
             }
+            length++;
         }
 
+        // Insert at Mid (by index)
         void insertAtMid(int idx, int val) {
             if (idx < 0 || idx > length) {
                 System.out.println("Invalid index");
@@ -62,6 +67,7 @@ public class DltNodeFromEnd {
             length++;
         }
 
+        // Delete from Beginning
         void deleteFromBeg() {
             if (head == null) {
                 System.out.println("List is empty");
@@ -69,31 +75,32 @@ public class DltNodeFromEnd {
             }
             head = head.next;
             length--;
-            if (head == null) { 
+            if (head == null) {
                 tail = null;
             }
         }
-        void deleteFromEnd(){
-            if(head == null){
-                System.out.println(" list is empty");
-                return;
-            }
-            else if(head.next == null){
-                head = null ; 
-                tail = null ;
-                
-            }
-            else {
-                Node temp = head;
-                while(temp.next != tail){
-                    temp = temp.next;
 
+        // Delete from End
+        void deleteFromEnd() {
+            if (head == null) {
+                System.out.println("List is empty");
+                return;
+            } else if (head.next == null) {
+                head = null;
+                tail = null;
+                length--;
+            } else {
+                Node temp = head;
+                while (temp.next != tail) {
+                    temp = temp.next;   
                 }
-                temp.next = null;
-                tail = temp;
+                temp.next = null;      
+                tail = temp;            
+                length--;
             }
         }
 
+       
         void display() {
             Node temp = head;
             while (temp != null) {
@@ -121,3 +128,11 @@ public class DltNodeFromEnd {
         list.display();
     }
 }
+
+// Output =>
+
+// 54 -> 10 -> 89 -> 20 -> Null
+// After deleting first node:
+// 10 -> 89 -> 20 -> Null
+// After deleting last node:
+// 10 -> 89 -> Null

@@ -98,3 +98,7 @@ public class DelFromBeg {
         list.display();
     }
 }
+// Output => 
+ // 54 -> 10 -> 89 -> 20 -> Null
+// After deleting first node:
+// 10 -> 89 -> 20 -> Null
