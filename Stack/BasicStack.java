@@ -8,7 +8,7 @@ public class BasicStack {
 
         Stack(int size) {
             this.size = size;
-            this.arr = new int[size]; 
+            this.arr = new int[size];
             top = -1;
         }
 
@@ -62,7 +62,7 @@ public class BasicStack {
 // Element inserted: 45
 // Element inserted: 67
 // Element popped: 67
-// Elements are: 23 45 
+// Elements are: 23 45
 
-// Time complexity => O(1) for push and pop 
+// Time complexity => O(1) for push and pop
 // and O(n) for traverse
