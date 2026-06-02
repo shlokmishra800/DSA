@@ -42,15 +42,15 @@ A class can implement the `Runnable` interface and define the `run()` method.
 
 ## Important Methods of Thread Class
 
-| Method | Description |
-|----------|-------------|
-| start() | Starts a new thread. |
-| run() | Contains the code executed by the thread. |
-| sleep() | Pauses the execution of a thread for a specified time. |
-| join() | Waits for a thread to finish execution. |
-| isAlive() | Checks whether a thread is running. |
-| getName() | Returns the thread name. |
-| setName() | Changes the thread name. |
+| Method        | Description                                            |
+|---------------|--------------------------------------------------------|
+| start()       | Starts a new thread.                                   |
+| run()         | Contains the code executed by the thread.              |
+| sleep()       | Pauses the execution of a thread for a specified time. |
+| join()        | Waits for a thread to finish execution.                |
+| isAlive()     | Checks whether a thread is running.                    |
+| getName()     | Returns the thread name.                               |
+| setName()     | Changes the thread name.                               |
 
 ## Applications of Multithreading
 

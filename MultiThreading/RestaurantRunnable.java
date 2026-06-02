@@ -2,7 +2,6 @@
 
 package MultiThreading;
 
-
 class CookingJob implements Runnable {
     private String task;
 
@@ -12,7 +11,7 @@ class CookingJob implements Runnable {
 
     public void run() {
         System.out.println(task + " is being prepared by " +
-            Thread.currentThread().getName());
+                Thread.currentThread().getName());
     }
 }
 
